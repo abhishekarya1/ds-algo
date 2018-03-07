@@ -18,6 +18,33 @@ int matmul(vec dim, int be, int en, auto& dp) {
 }
 
 
+int matmul2(vec dim, int be, int en, auto& dp){
+	int n = en - be + 1;
+	// multiply matrices of len 2 upto n
+	for(int len = 2; len <= n; ++len){
+		// shift this len
+		for(int j = 0; j <= n - len - 1; ++j){
+			int srt = j;
+			int end = j + len;
+			int mnm = 1e6;
+			for(int k = 1; k <= len - 1; ++k){
+				int q1 = dp[srt][srt + k];
+				int q2 = dp[srt + k][end];
+				int q3 = dim[srt]*dim[srt + k]* dim[end];
+				mnm = min(mnm, q1 + q2 + q3);
+			}
+			dp[srt][end] = mnm;
+		}
+	}
+	return dp[0][n - 1];
+}
+
+
+
+
+
+/*
+Learning: DO NOT THINK COMPUTERS.
 
 int matmul2(vec dim){
 	int n = dim.size();
@@ -41,4 +68,4 @@ int matmul2(vec dim){
 	}
 	printMat(dp);
 	return dp[0][n - 1];
-}
+}*/

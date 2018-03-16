@@ -1,0 +1,13 @@
+debugger (int[4])*arr
+gregorianCalendar
+find usages C+7
+show usages CA+7
+highlight usages-->F3-->esc
+gutter navigation icons
+go to definition C+b
+go to several definition CA+ b
+quick definiton ctrl + i
+quick documentation Ctrl+Q
+type hierarchies Ctrl+H hierarchies navigate->type hierarchies
+doxygen comments /**, ///, /*!, //!
+back forth alt+shift+left

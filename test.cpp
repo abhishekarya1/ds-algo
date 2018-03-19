@@ -27,4 +27,6 @@ void iofile()           {freopen(R"(../in)", "r", stdin);freopen(R"(../out)", "w
 
 int main(){
     cout << (LONG_LONG_MAX);
+    vi v;
+    cout << (end(v) == v.end());
 }

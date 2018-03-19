@@ -15,4 +15,8 @@ add_executable(ds_algo
 #        builtins.cpp cpp-template.cpp
 #        segment_trees/spoj-kqueryo.cc
 #        segment_trees/spoj-templeq.cpp
-        fenwick_trees/spoj-fentree.cpp )
+#        fenwick_trees/spoj-fentree.cpp
+        segment_trees/spoj-mkthnum.cpp
+
+        #Bracket
+        )

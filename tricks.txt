@@ -1,13 +1,28 @@
 debugger (int[4])*arr
 gregorianCalendar
-find usages C+7
-show usages CA+7
 highlight usages-->F3-->esc
 gutter navigation icons
-go to definition C+b
-go to several definition CA+ b
-quick definiton ctrl + i
-quick documentation Ctrl+Q
-type hierarchies Ctrl+H hierarchies navigate->type hierarchies
-doxygen comments /**, ///, /*!, //!
-back forth alt+shift+left
+live templates file->settings->editor->Live templates
+CA+7                    show usages
+C+7                     find usages
+C+b                     go to definition
+CA+ b                   go to several definition
+ctrl +                  quick definition
+Ctrl+Q                  quick documentation
+Ctrl+H                  type hierarchies hierarchies navigate->type hierarchies
+/**, ///, /*!, //!      doxygen comments
+alt+shift+left          back forth
+ctrl+f12                view->file structure to navigate
+ctrl+shift+up           move line up
+alt+j                   select next occurence
+ctrl+alt+shift+j        select all
+ctrl+alt+left click     add caret
+ctrl+D                  duplicate line
+ctrl+y                  delete line
+code|surroundWith       code wrapper
+ctrl+sft+enter          autocomplete
+
+
+
+
+

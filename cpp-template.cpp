@@ -3,15 +3,16 @@ using namespace std;
 /*ONLY FOR GNU*/
 #include <ext/pb_ds/assoc_container.hpp>    // Common file
 #include <ext/pb_ds/tree_policy.hpp>        // Including tree_order_statistics_node_update
+using namespace __gnu_pbds;
 typedef tree<int,null_type,less<int>,rb_tree_tag,tree_order_statistics_node_update>ordered_set;
 /* tree.find_by_order(i) == gives element at ith position in tree
  tree.order_by_key(val)== gives iterator to upper_bound(x)*/
 /* GNU SPECIFIC ENDS*/
-
 const int inf           = 1<<28;
 const int D             = (int)1e6+5;
 typedef long long       lli;
 typedef pair<int, int>  ii;
+typedef tuple<int, int, int> iii;
 typedef vector<int>     vi;
 typedef vector<vi>      vvi;
 typedef vector<bool>    vb;
@@ -19,8 +20,8 @@ typedef vector<bool>    vb;
 #define scd(a)          scanf("%d", &a)
 #define scs(a)          scanf("%s", a)
 #define prd(a)           printf("%d\n", a)
-#define freq            first
-#define val             second
+#define fr            first
+#define sec             second
 #define pb(a)           push_back(a)
 #define all(a)          a.begin(),a.end()
 void inputVec(vi&v)     {for (auto&i : v)scd(i);}
@@ -32,3 +33,6 @@ int mid(int a, int b)   {return (a + b) >> 1;}
 int mid1(int a, int b)  {return ((a+b)>>1)+1;}
 void iofile()           {freopen(R"(../in)", "r", stdin);freopen(R"(../out)", "w", stdout);}
 /*************************/
+int main(){
+
+}

@@ -21,6 +21,7 @@ ctrl+D                  duplicate line
 ctrl+y                  delete line
 code|surroundWith       code wrapper
 ctrl+sft+enter          autocomplete
+ctrl+sht+f8             remove all breakpoints
 
 
 

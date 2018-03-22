@@ -1,4 +1,5 @@
-debugger (int[4])*arr
+doskey c++=g++ -std=c++11 $*    creates aliases in the cmd prompt for windows
+(int[4])*arr                    debugger
 gregorianCalendar
 highlight usages-->F3-->esc
 gutter navigation icons
@@ -16,7 +17,7 @@ ctrl+f12                view->file structure to navigate
 ctrl+shift+up           move line up
 alt+j                   select next occurence
 ctrl+alt+shift+j        select all
-ctrl+alt+left click     add caret
+ctrl+alt+left click     add caret cursor
 ctrl+D                  duplicate line
 ctrl+y                  delete line
 code|surroundWith       code wrapper

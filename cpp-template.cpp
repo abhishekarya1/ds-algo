@@ -1,3 +1,5 @@
+// no of elements less than or equal to x upperbound
+// no of elements less than x lowerbound
 #include <bits/stdc++.h>
 using namespace std;
 /*ONLY FOR GNU*/
@@ -9,7 +11,6 @@ typedef tree<int,null_type,less<int>,rb_tree_tag,tree_order_statistics_node_upda
  tree.order_by_key(val)== gives iterator to upper_bound(x)*/
 /* GNU SPECIFIC ENDS*/
 const int inf           = 1<<28;
-const int D             = (int)1e6+5;
 typedef long long       lli;
 typedef pair<int, int>  ii;
 typedef tuple<int, int, int> iii;
@@ -19,11 +20,13 @@ typedef vector<bool>    vb;
 #define sc              scanf               /*remember that %c %n %[] does NOT consume whitespaces*/
 #define scd(a)          scanf("%d", &a)
 #define scs(a)          scanf("%s", a)
-#define prd(a)           printf("%d\n", a)
-#define fr            first
+#define pr              printf
+#define prd(a)          printf("%d\n", a)
+#define fr              first
 #define sec             second
 #define pb(a)           push_back(a)
 #define all(a)          a.begin(),a.end()
+#define mmset(a, b)     memset(a, b, sizeof(a))
 void inputVec(vi&v)     {for (auto&i : v)scd(i);}
 void printVec(vi&v)     {for (auto&i : v)prd(i);}
 void printMat(vvi& mat) {for (auto&v : mat) {for (auto&x : v)cout << x << " ";} cout << endl;}
@@ -33,6 +36,4 @@ int mid(int a, int b)   {return (a + b) >> 1;}
 int mid1(int a, int b)  {return ((a+b)>>1)+1;}
 void iofile()           {freopen(R"(../in)", "r", stdin);freopen(R"(../out)", "w", stdout);}
 /*************************/
-int main(){
-
-}
+const int D             = (int)4e4+5;

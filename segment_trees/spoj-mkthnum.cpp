@@ -1,4 +1,5 @@
-//TODO http://www.spoj.com/problems/MKTHNUM/
+// http://www.spoj.com/problems/MKTHNUM/
+// O(Qlog(N)*log(N)*log(Ai))
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -55,29 +56,37 @@ int query(int root, int be, int en, int i, int j, int k){
     // no of elements smaller than k
     if (be > en or i > en or j < be) return 0;
     if (i <= be && j >= en){
-        return t[root].end() - lower_bound(all(t[root]), k);
+        return upper_bound(all(t[root]), k)-t[root].begin();
     }
     int q1 = query(left(root), be, mid(be, en), i, j, k);
     int q2 = query(right(root), mid1(be, en), en, i, j, k);
     return q1 + q2;
 }
 
-int query(int i, int j, int k){
-    while(i <= j){
-        int m = mid(i, j);
-        int no_of_smaller_elements = query(1, 0, n-1, i, j,klone[m]);
-        if (no_of_smaller_elements == k) {
-            return klone[m];
+int query(int l, int r, int k){
+
+    int ans = 0;
+    int lo = -1e9;
+    int hi = 1e9;
+
+    while(lo <= hi){    // log(A^i)
+        int m = mid(lo, hi);
+        int elements_smaller_than_m = query(1, 0, n-1, l, r, m);
+        if (elements_smaller_than_m == k){
+            ans = m;
         }
-        else if (no_of_smaller_elements < k){
-            i = m + 1;
+
+        if (elements_smaller_than_m >= k){
+            hi = m - 1;
         }
         else {
-            j = m - 1;
+            lo = m + 1;
         }
     }
-    return -1;
+    return ans;
 }
+
+
 
 
 int main(){
@@ -86,13 +95,12 @@ int main(){
     scd(q);
     v.resize(n);
     inputVec(v);
-    copy(all(v), back_inserter(klone));
-    sort(all(klone));
     int l,r,k;
     build(1, 0, n-1);
     for(int i = 0; i < q; ++i){
         sc("%d %d %d", &l, &r, &k);
-        prd(query(l-1, r-1, k));
+        int ans = query(l-1, r-1, k);
+        prd(ans);
     }
     return 0;
 }

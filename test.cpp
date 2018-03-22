@@ -26,7 +26,8 @@ void iofile()           {freopen(R"(../in)", "r", stdin);freopen(R"(../out)", "w
 /*************************/
 
 int main(){
-    cout << (LONG_LONG_MAX);
-    vi v;
-    cout << (end(v) == v.end());
+    int arr[] = {1,2,3};
+    int ans = upper_bound(arr, arr+3, 1) - arr;
+    cout << ans;
+
 }

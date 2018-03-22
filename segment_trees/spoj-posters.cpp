@@ -1,4 +1,4 @@
-// TODO http://www.spoj.com/problems/POSTERS/
+// http://www.spoj.com/problems/POSTERS/
 #include <bits/stdc++.h>
 using namespace std;
 /*ONLY FOR GNU*/

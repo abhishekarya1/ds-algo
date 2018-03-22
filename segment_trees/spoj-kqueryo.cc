@@ -27,7 +27,7 @@ void iofile()           {freopen(R"(../in)", "r", stdin);freopen(R"(../out)", "w
 vi v;
 vvi t;
 
-// TODO Time Complexity 4nLogn??
+// Time Complexity 4nLogn??
 void build(int root, int be, int en){
     if (be > en) return;
     if (be == en){
@@ -40,7 +40,7 @@ void build(int root, int be, int en){
     merge(all(t[left(root)]), all(t[right(root)]), t[root].begin());
 }
 
-// TODO log4n + logN
+// log4n + logN
 int query(int root, int be, int en, int i, int j, int k){
     if (be > en || i > en || j < be) return  0;
 

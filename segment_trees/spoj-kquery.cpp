@@ -1,4 +1,4 @@
-// TODO: Solve using BIT
+// Solve using BIT
 // http://codeforces.com/blog/entry/10183
 #include <bits/stdc++.h>
 using namespace std;

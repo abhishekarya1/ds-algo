@@ -1,6 +1,9 @@
 // no of elements less than or equal to x upperbound
 // no of elements less than x lowerbound
 // basic implementation
+
+// TODO solve using BIT/SegTree
+
 #include <bits/stdc++.h>
 using namespace std;
 /*ONLY FOR GNU*/

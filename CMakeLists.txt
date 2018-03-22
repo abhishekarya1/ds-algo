@@ -17,5 +17,7 @@ add_executable(ds_algo
 #        segment_trees/spoj-templeq.cpp)
 #        fenwick_trees/spoj-fentree.cpp)
 #        segment_trees/spoj-mkthnum.cpp
-        segment_trees/spoj-mkthnum-2.cpp)
+#        segment_trees/spoj-mkthnum-2.cpp
+#        mo_algorithm/spoj-dquery.cpp
+        mo_algorithm/cf-powerful-array.cpp)
 #        segment_trees/spoj-posters-2.cpp)

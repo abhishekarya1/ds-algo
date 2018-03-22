@@ -1,5 +1,6 @@
-// no of elements less than or equal to x upperbound
-// no of elements less than x lowerbound
+// no of elements less than or equal to x upperbound-v.end
+// no of elements less than x lowerbound - v.begin
+// fflush(stdout) ("%I64d")
 #include <bits/stdc++.h>
 using namespace std;
 /*ONLY FOR GNU*/

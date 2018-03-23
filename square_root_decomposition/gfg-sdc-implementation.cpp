@@ -65,10 +65,12 @@ void pointUpdate(int idx, int val){
 int query(int l, int r){
     int srt = l;
     int end = r;
+    int curBlock = l/BSIZE;
     int ans = 0;
     while(srt <= end){
         if (srt % BSIZE == 0 && srt + BSIZE - 1 <= end){
-            ans += pre[srt];
+            if (l/BSIZE != curBlock) curBlock++;
+            ans += pre[curBlock];
             srt += BSIZE;
         }
         else{
